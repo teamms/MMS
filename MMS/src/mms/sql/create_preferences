@@ -1,0 +1,15 @@
+CREATE TABLE Preferences
+(
+Preferences_ID int NOT NULL AUTO_INCREMENT,
+Preferences_Person_Mapping_ID int NOT NULL,
+PreferredLocation varchar(255),
+PreferredReligion varchar(255),
+PreferredEducation varchar(255),
+PreferredComplexion varchar(255),
+PreferredIncome int(255),
+PRIMARY KEY (Preferences_ID),
+FOREIGN KEY (Preferences_Person_Mapping_ID) REFERENCES Person(Person_ID)
+);
+
+
+

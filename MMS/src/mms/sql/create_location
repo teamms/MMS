@@ -1,0 +1,14 @@
+CREATE TABLE Location
+(
+Location_ID int NOT NULL AUTO_INCREMENT,
+Location_Person_Mapping_ID int NOT NULL,
+CurrentCity varchar(255),
+CurrentState varchar(255),
+NativeCity varchar(255),
+NativeState varchar(255),
+PRIMARY KEY (Location_ID),
+FOREIGN KEY (Location_Person_Mapping_ID) REFERENCES Person(Person_ID)
+);
+
+
+

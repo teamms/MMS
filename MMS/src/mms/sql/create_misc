@@ -1,0 +1,20 @@
+CREATE TABLE Misc
+(
+Misc_ID int NOT NULL AUTO_INCREMENT,
+Misc_Person_Mapping_ID int NOT NULL,
+Smoking varchar(255),
+Diet varchar(255),
+Drinking varchar(255),
+Day int,
+Month int,
+Year int,
+Height float,
+Weight int,
+Complexion varchar(255),
+Additional varchar(500),
+PRIMARY KEY (Misc_ID),
+FOREIGN KEY (Misc_Person_Mapping_ID) REFERENCES Person(Person_ID)
+);
+
+
+

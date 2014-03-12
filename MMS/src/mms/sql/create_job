@@ -1,0 +1,15 @@
+CREATE TABLE Job
+(
+Job_ID int NOT NULL AUTO_INCREMENT,
+Job_Person_Mapping_ID int NOT NULL,
+JobTitle varchar(255),
+Field varchar(255),
+CompanyName varchar(255),
+Salary int,
+Location varchar(500),
+PRIMARY KEY (Job_ID),
+FOREIGN KEY (Job_Person_Mapping_ID) REFERENCES Person(Person_ID)
+);
+
+
+

@@ -1,0 +1,15 @@
+CREATE TABLE Education
+(
+Education_ID int NOT NULL AUTO_INCREMENT,
+Education_Person_Mapping_ID int NOT NULL,
+TenthBoard varchar(255),
+TwelfthBoard varchar(255),
+GraduationArea varchar(255),
+DegreeName varchar(255),
+CollegeName varchar(255),
+PRIMARY KEY (Education_ID),
+FOREIGN KEY (Education_Person_Mapping_ID) REFERENCES Person(Person_ID)
+);
+
+
+
